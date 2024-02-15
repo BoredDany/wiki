@@ -9,13 +9,27 @@
 
 <body>
     <form>
-		<input type ='text' id = 'name' name = 'name'/>
+        <input type ='text' id = 'name' name = 'name'/>
+        <label id='nameError'></label>
+    
         <input type ='text' id = 'lastName' name = 'lastName'/>
+        <label id='lastNameError'></label>
+    
         <input type ='text' id = 'email' name = 'email'/>
+        <label id='emailError'></label>
+    
         <input type ='number' id = 'semester' name = 'semester'/>
+        <label id='semesterError'></label>
+    
         <input type ='text' id = 'description' name = 'description'/>
-		<input type ='submit' value = 'Submit'/>
-	</form>
+        <label id='descriptionError'></label>
+    
+        <input type ='submit' value = 'Submit'/>
+
+        <label id='errorInfo'></label>
+    </form>
+
+    <script src = '/src/main/resources/static/js/formVerifier.js'></script>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+body {
+    background-color: #263A29; 
+}
+
+nav {
+    background-color: #34495E;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0.01px;
+}
+
+nav a {
+    color: white;
+    text-decoration: dotted;
+    font-style: initial;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section.profiles {
+    text-align: center;
+    color: white;
+}
+
+section.profiles #Titulo {
+    color: #E86A33; 
+    font-family: 'Tu Tipo de Letra', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+div.profile-card {
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+div.profile-card img {
+    max-width: 100%;
+}
+
+div.profile-card p.endfrase {
+   padding-left: 20px;
+}

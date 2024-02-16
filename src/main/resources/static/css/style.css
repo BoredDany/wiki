@@ -7,13 +7,14 @@ nav {
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
-    padding: 0.01px;
+    padding: 1px;
 }
 
 nav a {
     color: white;
     text-decoration: dotted;
     font-style: initial;
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -35,6 +36,7 @@ div.profile-card {
     margin: 20px;
     display: inline-block;
     text-align: left;
+    max-width: 90%;
 }
 
 div.profile-card img {
@@ -42,5 +44,7 @@ div.profile-card img {
 }
 
 div.profile-card p.endfrase {
-   padding-left: 20px;
+max-width: 100px;
+overflow: hidden;
+text-overflow: ellipsis;
 }

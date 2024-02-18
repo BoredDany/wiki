@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+
+    </head>
+    <body>
+        <h1>Form saved</h1>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Semester</th>
+                    <th>Description</th>
+                </tr>
+                <tr th:each="form : ${forms}">
+                    <td th:text="${form.name}"></td>
+                    <td th:text="${form.lastName}"></td>
+                    <td th:text="${form.email}"></td>
+                    <td th:text="${form.semester}"></td>
+                    <td th:text="${form.description}"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+
+</html>

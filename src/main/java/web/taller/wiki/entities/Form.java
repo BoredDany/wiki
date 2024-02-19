@@ -8,6 +8,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 
 @Entity
 @Getter
@@ -19,10 +23,20 @@ public class Form {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Length(min = 1, max = 2)
     private String name;
+
+    @Length(min = 1, max = 2)
     private String lastName;
+
+    @Email
     private String email;
+
     private String description;
+
+    @Min(1)
+    @Max(16)
     private int semester;
 
 }

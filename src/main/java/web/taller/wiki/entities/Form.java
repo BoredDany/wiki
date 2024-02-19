@@ -24,13 +24,14 @@ public class Form {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Length(min = 1, max = 2)
+    @Length(min = 1, max = 100)
     private String name;
 
-    @Length(min = 1, max = 2)
+    @Length(min = 1, max = 100)
     private String lastName;
 
     @Email
+    @Length(min = 1, max = 100)
     private String email;
 
     private String description;

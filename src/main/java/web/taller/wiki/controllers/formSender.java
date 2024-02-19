@@ -43,6 +43,7 @@ public class formSender {
     @PostMapping("/save-form")
     public String saveForm(Model model, @Valid @ModelAttribute("form") Form form, BindingResult result) {
         if (result.hasErrors()) {
+            model.addAttribute("form", form);
             return "contactUs";
         }
         formService.saveForm(form);

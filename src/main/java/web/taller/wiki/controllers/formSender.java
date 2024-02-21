@@ -27,26 +27,26 @@ public class formSender {
     @Autowired
     private InterfaceForm formService;
 
-    @GetMapping("/forms-saved")
+    @GetMapping("/grupo-2-3/forms-saved")
     public String getAllForms(Model model) {
 
         model.addAttribute("forms", formService.getAllForms());
         return "formsSaved";
     }
 
-    @GetMapping("/save-form")
+    @GetMapping("/grupo-2-3/save-form")
     public String getMethodName(Model model) {
         model.addAttribute("form", new Form());
         return "contactUs";
     }
 
-    @PostMapping("/save-form")
+    @PostMapping("/grupo-2-3/save-form")
     public String saveForm(Model model, @Valid @ModelAttribute("form") Form form, BindingResult result) {
         if (result.hasErrors()) {
             model.addAttribute("form", form);
             return "contactUs";
         }
         formService.saveForm(form);
-        return "redirect:/forms-saved";
+        return "redirect:/grupo-2-3/forms-saved";
     }
 }

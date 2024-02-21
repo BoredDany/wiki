@@ -1,42 +1,62 @@
 body {
-    background-color: #263A29; 
+    background-color: #EEDEC5; 
 }
 
 nav {
-    background-color: #34495E;
+    background-color: #003314;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
+    align-items: center;
     padding: 1px;
 }
 
 nav a {
-    color: white;
+    color: #EEDEC5;
     text-decoration: dotted;
     font-style: initial;
     font-size: 20px;
+    transition: all 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #FFD700; 
 }
 
 section.profiles {
     text-align: center;
-    color: white;
+    color: #003314;
 }
 
 section.profiles #Titulo {
-    color: #E86A33; 
+    color: #003314; 
     font-family: 'Tu Tipo de Letra', Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
 
 div.profile-card {
+    align-items: center;
     margin: 20px;
     display: inline-block;
     text-align: left;
-    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    max-height: 650px ;
+    transition: border 0.3s; 
+    border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 51, 20, 0.1);
+    transition: border 0.3s, opacity 0.3s;
+}
+
+div.profile-card:hover {
+    border: 2px solid #003314; 
+    box-shadow: 0 8px 16px rgba(0, 51, 20, 0.2);
+    filter: brightness(1.2);   
 }
 
 div.profile-card img {
@@ -47,4 +67,14 @@ div.profile-card p.endfrase {
 max-width: 100px;
 overflow: hidden;
 text-overflow: ellipsis;
+}
+
+#pi1 {
+    width: 300px;
+    height: auto;
+}
+
+#pi2 {
+    width: 300px;
+    height: auto;
 }

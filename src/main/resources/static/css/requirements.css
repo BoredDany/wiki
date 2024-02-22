@@ -1,0 +1,28 @@
+body {
+    background-color: #EEDEC5; 
+}
+
+nav {
+    background-color: #003314;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+}
+
+nav a {
+    color: #EEDEC5;
+    text-decoration: dotted;
+    font-style: initial;
+    font-size: 20px;
+    transition: all 0.3s;
+    margin: 0 40px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: #FFD700; 
+}

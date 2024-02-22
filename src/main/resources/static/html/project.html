@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+    <nav>
+        <h2>
+          <a href="/src/main/resources/static/html/team.html" class="link">Team</a>
+          <a href="/src/main/resources/static/html/tests.html" class="link"> Tests</a>
+          <a href="/src/main/resources/static/html/requirements.html" class="link"> Requirements</a>
+          <a href="/src/main/resources/static/html/project.html" class="link"> Project</a>
+          <a href="/src/main/resources/static/html/p_architecture.html" class="link"> Architecture</a>
+          <a href="/src/main/resources/static/html/develop.html" class="link"> Develop</a>
+          <a href="/src/main/resources/static/html/deployment.html" class="link"> Deployment</a>
+        </h2>
+      </nav>
+      
+    <section class="textos">
+      <h1 id="T1">Descripcion proyecto (Profesor)</h1>
+      <div class="textosp">
+        <h3>Enlaces mínimo</h3>
+        <ol>
+          <li>Página de presentación del equipo: (Textos realizados por el equipo)</li>
+            <ul>
+              <li>Nombre del equipo</li>
+              <li>Listado de integrantes: Rol de cada integrante (líder técnico, líder planeación, líder de pruebas)</li>
+              <li>lenguajes en que desarrollan y breve descripción del perfil técnico que tienen</li>
+            </ul>
+          <li>Descripción del proyecto: (Este apartado)</li>
+            <ul>
+              <li>Textos realizados por el profesor</li>
+              <li>Complementados por el equipo</li>
+            </ul>
+          <li>Requerimientos: (Textos realizados por el profesor y complementados por el equipo)</li>
+            <ul>
+              <li>Funcionales</li>
+              <li>No funcionales</li>
+            </ul>
+          <li>Arquitectura del proyecto: (Textos realizados por el profesor y complementados por el equipo)</li>
+            <ul>
+              <li>Diagramas de referencia C4</li>
+                <ul>
+                  <li>Diagrama de contexto</li>
+                  <li>Diagrama del contenedor</li>
+                  <li>Diagrama de componentes</li>
+                </ul>
+              <li>Modelos</li>
+                <ul>
+                <li>Entidad/Relación: Diccionario</li>
+                </ul> 
+              <li>Diagrama de despliegue</li>
+            </ul>
+          <li>Para desarrollo: (Textos realizados por el equipo)</li>
+            <ul>
+              <li>Descripciones de endpoints (Textos realizados por el equipo)</li>
+            </ul>
+          <li>Pruebas: (Textos realizados por el equipo)</li>
+            <ul>
+              <li>Casos de pruebas frontend</li>
+              <li>Casos de pruebas backend</li>
+            </ul>
+          <li>Despliegue: (Textos realizados por el equipo)</li>
+            <ul>
+              <li>Versiones</li>
+            </ul>
+          <li>Formulario de contáctenos</li>
+            <ul>
+              <li>Si bien, los datos se deben guardar en una base de datos con uso de thymeleaf y mínimo debe tener los siguientes datos:</li>
+                <ul>
+                  <li>Nombres: Obligatorio, 100 caracteres</li>
+                    <li>Apellidos: Obligatorio, 100 caracteres</li>
+                    <li>Correo: Obligatorio, 100 caracteres. , que tenga el caracter ‘@’ y después de ese caracter por lo menos un punto, no 
+                      debe tener espacios y nada de caracteres espaciales como tildes, ñ, todo debe estar escrito en mayúsculas.</li>
+                    <li>Semestre: Debe ser un número entre 0 y 16.</li>
+                    <li>Descripción: Obligatorio.</li>
+                </ul>
+                <li>La cantidad de caracteres, se debe manejar con un mensaje que diga '&lt;cantidad de caracteres escritos&gt;/&lt;cantidad 
+                  de caracteres máximos&gt;: cuando se escriba un caracter debe aumentar y no debe permitir escribir mas texto cuando se pase 
+                  de la cantidad.'</li>
+              <li>Cuando no se cumpla alguna condición deberá poner en rojo el cuadro de texto, notificar en la parte inferior qué no cumplió</li>
+            </ul>
+          </ol>
+      </div>
+      <h1 id="T2">Complemento o extras (Equipo)</h1>
+      <div class="textosT">
+        <p> </p>
+      </div>
+    </section>
+</body>
+</html>

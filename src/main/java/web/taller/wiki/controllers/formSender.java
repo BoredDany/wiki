@@ -65,6 +65,6 @@ public class formSender {
             return "contactUs";
         }
         formService.saveForm(form);
-        return "redirect:/forms-saved";
+        return "redirect:/controllers/forms-saved";
     }
 }

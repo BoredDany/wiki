@@ -12,13 +12,13 @@ window.onload = function () {
             errorLabel.textContent = currentLength + "/" + maxLength;
 
             if ((inputId === 'email' && !emailRegex.test(this.value)) || this.value.length > maxLength) {
-                this.style.borderColor = 'red';
-            } else if (inputId === 'semester' && (this.value < 1 || this.value > 16)) {
-                this.style.borderColor = 'red';
-            } else if (currentLength > maxLength || currentLength === 0) {
-                this.style.borderColor = 'red';
-            } else {
                 this.style.borderColor = '';
+            } else if (inputId === 'semester' && (this.value < 1 || this.value > 16)) {
+                this.style.borderColor = '';
+            } else if (currentLength > maxLength || currentLength === 0) {
+                this.style.borderColor = '';
+            } else {
+                this.style.borderColor = 'rgb(0, 255, 149)';
             }
         };
 

@@ -28,14 +28,39 @@ public class formSender {
     @Autowired
     private InterfaceForm formService;
 
-    @GetMapping("/home")
+    @GetMapping("/team")
     public String showHome() {
-        return "home";
+        return "team";
     }
 
     @GetMapping("/project")
     public String showProject() {
         return "project";
+    }
+
+    @GetMapping("/requirements")
+    public String showRequirements() {
+        return "requirements";
+    }
+
+    @GetMapping("/p_architecture")
+    public String showArch() {
+        return "p_architecture";
+    }
+
+    @GetMapping("/develop")
+    public String showDev() {
+        return "develop";
+    }
+
+    @GetMapping("/tests")
+    public String showTest() {
+        return "tests";
+    }
+
+    @GetMapping("/deployment")
+    public String showDeplyment() {
+        return "deployment";
     }
 
     @GetMapping("/contactUs")

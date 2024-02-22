@@ -8,13 +8,14 @@
 <body>
   <nav>
     <h2>
-      <a href="/src/main/resources/static/html/team.html" class="link">Team</a>
-      <a href="/src/main/resources/static/html/project.html" class="link"> Project</a>
-      <a href="/src/main/resources/static/html/requirements.html" class="link"> Requirements</a>
-      <a href="/src/main/resources/static/html/p_architecture.html" class="link"> Architecture</a>
-      <a href="/src/main/resources/static/html/develop.html" class="link"> Develop</a>
-      <a href="/src/main/resources/static/html/tests.html" class="link"> Tests</a>
-      <a href="/src/main/resources/static/html/deployment.html" class="link"> Deployment</a>
+      <a th:href="@{/controllers/team}" class="link">Team</a>
+      <a th:href="@{/controllers/project}" class="link">Project</a>
+      <a th:href="@{/controllers/contactUs}" class="link">Contact us</a>
+      <a th:href="@{/controllers/requirements}" class="link">requirements</a>
+      <a th:href="@{/controllers/p_architecture}" class="link">architecture</a>
+      <a th:href="@{/controllers/develop}" class="link">Develop</a>
+      <a th:href="@{/controllers/tests}" class="link">Tests</a>
+      <a th:href="@{/controllers/deployment}" class="link">Deployment</a>
     </h2>
   </nav>
     

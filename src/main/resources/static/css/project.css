@@ -4,12 +4,22 @@ body {
 }
 
 nav {
-    background-color: #003314;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     justify-content: space-around;
     align-items: center;
+    background: linear-gradient(to right, #1a3522, #5b9488);
     padding: 1px;
+}
+
+nav h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 nav a {
@@ -18,7 +28,6 @@ nav a {
     font-style: initial;
     font-size: 20px;
     transition: all 0.3s;
-    margin: 0 40px;
 }
 
 nav a:hover {

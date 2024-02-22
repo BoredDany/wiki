@@ -23,7 +23,7 @@ import web.taller.wiki.repositories.FormRepository;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
-@RequestMapping
+@RequestMapping("/controllers")
 public class formSender {
     @Autowired
     private InterfaceForm formService;

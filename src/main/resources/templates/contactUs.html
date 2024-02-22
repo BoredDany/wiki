@@ -10,12 +10,15 @@
 <body>
 
   <nav>
-    <h2><a href="/html/home.html" class="link">Team</a> <a href="/html/project.html" class="link">Project</a> <a
-        href="/contactUs" class="link">Contact us</a></h2>
-  </nav>
+    <h2>
+        <a th:href="@{/controllers/home}" class="link">Team</a>
+        <a th:href="@{/controllers/project}" class="link">Project</a>
+        <a th:href="@{/controllers/contactUs}" class="link">Contact us</a>
+    </h2>
+</nav>
 
 
-  <form th:action="@{/save-form}" th:object="${form}" method="POST">
+  <form th:action="@{/controllers/save-form}" th:object="${form}" method="POST">
     <input type='text' id='name' th:field="*{name}" name='name' />
     <label id='nameError'></label>
 

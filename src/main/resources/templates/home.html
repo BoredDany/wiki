@@ -9,9 +9,12 @@
 
 <body>
   <nav>
-    <h2><a href="/html/home.html" class="link">Team</a> <a href="/html/project.html" class="link">Project</a> <a
-        href="/contactUs" class="link">Contact us</a></h2>
-  </nav>
+    <h2>
+        <a th:href="@{/controllers/home}" class="link">Team</a>
+        <a th:href="@{/controllers/project}" class="link">Project</a>
+        <a th:href="@{/controllers/contactUs}" class="link">Contact us</a>
+    </h2>
+</nav>
 
   <section class="profiles">
     <h1 id="Titulo">Meet Our Team</h1>

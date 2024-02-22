@@ -1,5 +1,6 @@
 body {
-    background-color: #EEDEC5; 
+    background-color: #EEDEC5;
+    margin: 0;
 }
 
 nav {
@@ -25,4 +26,41 @@ nav a:hover {
     text-decoration: underline;
     transform: scale(1.1);
     color: #FFD700; 
+}
+
+.txt1, .txt2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.txt1 div, .txt2 div {
+    flex: 0 0 calc(60% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 51, 20, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;  
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.txt1 div:hover, .txt2 div:hover {
+    border: 2px solid #003314; 
+    box-shadow: 0 8px 16px rgba(0, 51, 20, 0.2);
+    filter: brightness(1.2); 
+}
+
+.textosT {
+    width: 100%;
+    box-shadow: 0 4px 0px #003314;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.textos h1, .textos h3, .textos li, .textosT p {
+    color: #003314;
+}
+
+.textos li {
+    margin-bottom: 8px;
 }

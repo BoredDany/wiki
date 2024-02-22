@@ -12,6 +12,7 @@ import org.hibernate.validator.constraints.Length;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Getter
@@ -24,20 +25,21 @@ public class Form {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Length(min = 1, max = 100)
+    @Length(min = 1, max = 100, message = "El nombre debe tener entre 1 y 100 caracteres")
     private String name;
 
-    @Length(min = 1, max = 100)
+    @Length(min = 1, max = 100, message = "El apellido debe tener entre 1 y 100 caracteres")
     private String lastName;
 
-    @Email
-    @Length(min = 1, max = 100)
+    @Email(message = "El email no es válido")
+    @Length(min = 1, max = 100, message = "El email debe tener entre 1 y 100 caracteres")
     private String email;
 
+    @NotBlank(message = "La descripción no puede estar vacía")
     private String description;
 
-    @Min(1)
-    @Max(16)
+    @Min(value = 1, message = "El semestre debe ser mayor a 0")
+    @Max(value = 16, message = "El semestre debe ser menor a 17")
     private int semester;
 
 }

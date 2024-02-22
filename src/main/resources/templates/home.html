@@ -3,13 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+<<<<<<<< HEAD:src/main/resources/templates/team.html
   <title>Team</title>
   <link rel="stylesheet" href="../css/team.css">
+========
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+>>>>>>>> a2bcb6bfb516b7833370fc2fdde820642a08528c:src/main/resources/templates/home.html
 </head>
 
 <body>
   <nav>
     <h2>
+<<<<<<<< HEAD:src/main/resources/templates/team.html
       <a href="/src/main/resources/static/html/team.html" class="link">Team</a>
       <a href="/src/main/resources/static/html/tests.html" class="link"> Tests</a>
       <a href="/src/main/resources/static/html/requirements.html" class="link"> Requirements</a>
@@ -19,11 +25,18 @@
       <a href="/src/main/resources/static/html/deployment.html" class="link"> Deployment</a>
     </h2>
   </nav>
+========
+        <a th:href="@{/controllers/home}" class="link">Team</a>
+        <a th:href="@{/controllers/project}" class="link">Project</a>
+        <a th:href="@{/controllers/contactUs}" class="link">Contact us</a>
+    </h2>
+</nav>
+>>>>>>>> a2bcb6bfb516b7833370fc2fdde820642a08528c:src/main/resources/templates/home.html
 
   <section class="profiles">
     <h1 id="Titulo">Meet Our Team</h1>
     <div class="profile-card">
-      <img id="pi1" src="/src/main/resources/static/images/FP1.png" alt="Profile 1">
+      <img id="pi1" src="/images/FP1.png" alt="Profile 1">
       <p> Santiago Castro Zuluaga- Desarrollador UI/UX</p>
       <p>líder técnico</p>
       <p>Lenguajes de programacion</p>
@@ -34,10 +47,11 @@
         <li>Html</li>
         <li>Css</li>
       </ul>
-      <p class="frase">Estudiante de ingeniería de sistemas, con gran pasion en el analisis de datos y el deasrrollo web. </p>
+      <p class="frase">Estudiante de ingeniería de sistemas, con gran pasion en el analisis de datos y el deasrrollo
+        web. </p>
     </div>
     <div class="profile-card">
-      <img id="pi2" src="/src/main/resources/static/images/FP2.png" alt="Profile 2">
+      <img id="pi2" src="/images/FP2.png" alt="Profile 2">
       <p>Matias Gonzales Valencia - Desarrollador Data base</p>
       <p>Líder planeación</p>
       <p>Lenguajes de programacion</p>
@@ -46,10 +60,11 @@
         <li>Java++</li>
         <li>Python</li>
       </ul>
-      <p class="frase">Estudiante de ingeniería de sistemas, con especial interés en la ingeniería de software y simulación y neurociencia</p>
+      <p class="frase">Estudiante de ingeniería de sistemas, con especial interés en la ingeniería de software y
+        simulación y neurociencia</p>
     </div>
     <div class="profile-card">
-      <img id="pi3" src="/src/main/resources/static/images/FP3.png" alt="Profile 3">
+      <img id="pi3" src="/images/FP3.png" alt="Profile 3">
       <p>Daniela Martínez Quiroga - Desarrolladora BackEnd</p>
       <p>líder de pruebas</p>
       <p>Lenguajes de programacion</p>
@@ -59,13 +74,12 @@
         <li>C / C++</li>
         <li>Python</li>
       </ul>
-      <p class="frase">Estudiante de ingeniería de sistemas, con especial interés en la ingeniería de software y la programación,
+      <p class="frase">Estudiante de ingeniería de sistemas, con especial interés en la ingeniería de software y la
+        programación,
         principalmente backend</p>
-      </div>
+    </div>
   </section>
 
-
-  <script src='/js/formVerifier.js'></script>
 </body>
 
 </html>

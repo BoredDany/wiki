@@ -1,0 +1,81 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #1a3522, #5b9488);
+    padding: 1px;
+}
+
+nav h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: #EEDEC5;
+    text-decoration: dotted;
+    font-style: initial;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+body {
+    background-image: url('/images/finca2.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.925);
+    padding: 15px;
+    border-radius: 60px;
+    width: 30%;
+    display: flex; /* Añade esta línea para hacer que los elementos del formulario se comporten como elementos flexibles */
+    flex-direction: column; /* Añade esta línea para hacer que los elementos del formulario se apilen verticalmente */
+    align-items: center;
+    margin-top: 60px;
+}
+
+input[type='text'],
+input[type='number'] {
+    width: 70%;
+    height: 1px;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 50px;
+    border-width: 3px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+input[type='submit'] {
+    width: 50%;
+    background: linear-gradient(to right, #1a3522, #5b9488);
+    border-color: #27503f;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type='submit']:hover {
+    opacity: 0.8;
+}
+
+label {
+    color: #fff;
+    font-size:15px;
+    text-align: center; /* Añade esta línea para centrar los labels */
+}

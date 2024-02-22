@@ -8,28 +8,40 @@
 </head>
 
 <body>
-    <form th:action="@{/save-form}" th:object="${form}" method="POST">
-        <input type ='text' id = 'name' th:field="*{name}" name = 'name'/>
-        <label id='nameError'></label>
-    
-        <input type ='text' id = 'lastName' th:field="*{lastName}" name = 'lastName'/>
-        <label id='lastNameError'></label>
-    
-        <input type ='text' id = 'email' th:field="*{email}" name = 'email'/>
-        <label id='emailError'></label>
-    
-        <input type ='number' id = 'semester' th:field="*{semester}" name = 'semester'/>
-        <label id='semesterError'></label>
-    
-        <input type ='text' id = 'description' th:field="*{description}" name = 'description'/>
-        <label id='descriptionError'></label>
-    
-        <input type ='submit' value = 'Submit'/>
 
-        <label id='errorInfo'th:text="${error}"></label>
-    </form>
+  <nav>
+    <h2>
+        <a th:href="@{/controllers/home}" class="link">Team</a>
+        <a th:href="@{/controllers/project}" class="link">Project</a>
+        <a th:href="@{/controllers/contactUs}" class="link">Contact us</a>
+    </h2>
+</nav>
 
-    <script src = '/js/formVerifier.js'></script>
+
+  <form th:action="@{/controllers/save-form}" th:object="${form}" method="POST">
+    <input type='text' id='name' th:field="*{name}" name='name' />
+    <label id='nameError'></label>
+
+    <input type='text' id='lastName' th:field="*{lastName}" name='lastName' />
+    <label id='lastNameError'></label>
+
+    <input type='text' id='email' th:field="*{email}" name='email' />
+    <label id='emailError'></label>
+
+    <input type='number' id='semester' th:field="*{semester}" name='semester' />
+    <label id='semesterError'></label>
+
+    <input type='text' id='description' th:field="*{description}" name='description' />
+    <label id='descriptionError'>22/100</label>
+
+    <input type='submit' value='Submit' />
+
+    <label id='errorInfo' th:text="${error}"></label>
+
+  </form>
+
+
+  <script src='/js/VerifyForm.js'></script>
 </body>
 
 </html>

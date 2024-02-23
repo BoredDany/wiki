@@ -90,6 +90,6 @@ public class formSender {
             return "contactUs";
         }
         formService.saveForm(form);
-        return "redirect:/controllers/forms-saved";
+        return "redirect:/grupo23/controllers/forms-saved";
     }
 }

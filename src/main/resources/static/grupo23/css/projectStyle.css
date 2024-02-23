@@ -27,6 +27,7 @@ nav a {
     padding: 0px 0px;
     background-color: transparent;
     transition: all 0.3s ease; 
+    text-decoration: none; 
 }
 
 nav a:hover {

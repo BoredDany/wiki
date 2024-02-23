@@ -24,6 +24,7 @@ nav h2 {
 }
 
 nav a {
+    text-decoration: none; 
     padding: 0px 0px;
     background-color: transparent;
     transition: all 0.3s ease; 

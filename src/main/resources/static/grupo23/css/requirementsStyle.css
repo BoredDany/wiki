@@ -23,10 +23,10 @@ nav h2 {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    color: #ffffff;
 }
 
 nav a {
+    color: #ffffff;
     text-decoration: none; 
     padding: 0px 0px;
     background-color: transparent;

@@ -38,6 +38,10 @@ nav a:hover {
 }
 
 .txt1, .txt2 {
+    margin-top: 80px;
+}
+
+.txt1, .txt2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

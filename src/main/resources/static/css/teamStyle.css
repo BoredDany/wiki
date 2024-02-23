@@ -46,6 +46,7 @@ section.profiles #Titulo {
     color: #003314; 
     font-family: 'Tu Tipo de Letra', Arial, Helvetica, sans-serif;
     font-size: 40px;
+    margin-top: 100px;
 }
 
 div.profile-card {

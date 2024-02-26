@@ -46,6 +46,7 @@ nav a:hover {
 section.profiles {
     text-align: center;
     color: #003314;
+    margin-top: 10px;
 }
 
 section.profiles #Titulo {

@@ -23,90 +23,27 @@
     
     <section class="txt1">
       <h1 id="T1">Descripcion proyecto (Profesor)</h1>
-      <div class="textosp">
-        <h3>Enlaces mínimo</h3>
-        <ol>
-          <div>
-            <li>Página de presentación del equipo: (Textos realizados por el equipo)</li>
-            <ul>
-              <li>Nombre del equipo</li>
-              <li>Listado de integrantes: Rol de cada integrante (líder técnico, líder planeación, líder de pruebas)</li>
-              <li>lenguajes en que desarrollan y breve descripción del perfil técnico que tienen</li>
-            </ul>
-          </div> 
-          <div><li>Descripción del proyecto: (Este apartado)</li>
-            <ul>
-              <li>Textos realizados por el profesor</li>
-              <li>Complementados por el equipo</li>
-            </ul>
-          </div>
-          <div>
-          <li>Requerimientos: (Textos realizados por el profesor y complementados por el equipo)</li>
-            <ul>
-              <li>Funcionales</li>
-              <li>No funcionales</li>
-            </ul>
-          </div>
-          <div>
-          <li>Arquitectura del proyecto: (Textos realizados por el profesor y complementados por el equipo)</li>
-            <ul>
-              <li>Diagramas de referencia C4</li>
-                <ul>
-                  <li>Diagrama de contexto</li>
-                  <li>Diagrama del contenedor</li>
-                  <li>Diagrama de componentes</li>
-                </ul>
-              <li>Modelos</li>
-                <ul>
-                <li>Entidad/Relación: Diccionario</li>
-                </ul> 
-              <li>Diagrama de despliegue</li>
-            </ul>
-          </div>
-          <div>
-          <li>Para desarrollo: (Textos realizados por el equipo)</li>
-            <ul>
-              <li>Descripciones de endpoints (Textos realizados por el equipo)</li>
-            </ul>
-          </div>
-          <div>
-          <li>Pruebas: (Textos realizados por el equipo)</li>
-            <ul>
-              <li>Casos de pruebas frontend</li>
-              <li>Casos de pruebas backend</li>
-            </ul>
-          </div>
-          <div>
-          <li>Despliegue: (Textos realizados por el equipo)</li>
-            <ul>
-              <li>Versiones</li>
-            </ul>
-          </div>
-          <div>
-          <li>Formulario de contáctenos</li>
-            <ul>
-              <li>Si bien, los datos se deben guardar en una base de datos con uso de thymeleaf y mínimo debe tener los siguientes datos:</li>
-                <ul>
-                  <li>Nombres: Obligatorio, 100 caracteres</li>
-                    <li>Apellidos: Obligatorio, 100 caracteres</li>
-                    <li>Correo: Obligatorio, 100 caracteres. , que tenga el caracter ‘@’ y después de ese caracter por lo menos un punto, no 
-                      debe tener espacios y nada de caracteres espaciales como tildes, ñ, todo debe estar escrito en mayúsculas.</li>
-                    <li>Semestre: Debe ser un número entre 0 y 16.</li>
-                    <li>Descripción: Obligatorio.</li>
-                </ul>
-                <li>La cantidad de caracteres, se debe manejar con un mensaje que diga '&lt;cantidad de caracteres escritos&gt;/&lt;cantidad 
-                  de caracteres máximos&gt;: cuando se escriba un caracter debe aumentar y no debe permitir escribir mas texto cuando se pase 
-                  de la cantidad.'</li>
-              <li>Cuando no se cumpla alguna condición deberá poner en rojo el cuadro de texto, notificar en la parte inferior qué no cumplió</li>
-            </ul>
-          </div>
-          </ol>
-      </div>
-    </section>
-    <section class="txt2">
-      <h1 id="T2">Complemento o extras (Equipo)</h1>
-      <div class="textosT">
-        <p>Detalles o funciones extra agregadas por el equipo</p>
+      <div>
+        <p>Para el desarrollo de esta aplicación, se deben considerar dos perfiles de usuarios principales: el “Usuario Arrendatario” y el “Usuario Arrendador”.</p>
+        <p>El “Usuario Arrendatario” tendrá la capacidad de realizar una variedad de acciones relacionadas con la gestión de propiedades y la interacción con otros 
+          usuarios. Entre estas acciones se incluyen la creación, edición, eliminación y actualización de propiedades disponibles para arrendamiento. Además, este 
+          usuario será responsable de revisar y responder a todas las solicitudes de arrendamiento recibidas, teniendo la opción de aceptarlas o cancelarlas según 
+          corresponda. También será su responsabilidad verificar los pagos realizados por los arrendadores y proporcionar calificaciones y comentarios sobre la 
+          experiencia de arrendamiento.</p>
+        <p>Por otro lado, el “Usuario Arrendador” tendrá un conjunto diferente de funcionalidades diseñadas para facilitar el proceso de búsqueda y arrendamiento 
+          de propiedades. Este usuario podrá buscar fincas disponibles filtradas por ubicación geográfica, así como solicitar el arrendamiento de una finca 
+          específica. Una vez que se apruebe la solicitud, el arrendador podrá realizar el pago correspondiente del arriendo y, posteriormente, calificar tanto 
+          la finca arrendada como al arrendatario.</p>
+        <p>La implementación de esta aplicación requerirá la integración de un sistema de autenticación y autorización robusto para gestionar los diferentes roles 
+          y permisos de los usuarios. Además, se necesitarán interfaces de usuario intuitivas y funcionales que permitan a los usuarios interactuar de manera efectiva
+           con la plataforma.</p>
+        <p>El flujo de trabajo para el “Usuario Arrendatario” implicará la gestión activa de las propiedades disponibles, la revisión y respuesta a las solicitudes 
+          de arrendamiento, así como el seguimiento de los pagos realizados y la provisión de retroalimentación sobre las experiencias de arrendamiento. Por otro lado, 
+          el “Usuario Arrendador” estará enfocado en la búsqueda y arrendamiento de propiedades, así como en la gestión de los pagos y la calificación de la experiencia
+           general.</p>
+        <p>En resumen, el desarrollo de esta aplicación requerirá una planificación detallada y un enfoque centrado en el usuario para garantizar una experiencia fluida
+           y satisfactoria para todos los usuarios involucrados. La implementación exitosa de esta plataforma requerirá una cuidadosa consideración de las necesidades
+            y expectativas tanto de los arrendatarios como de los arrendadores.</p>
       </div>
     </section>
 </body>

@@ -26,20 +26,36 @@
 
 
   <form th:action="@{/grupo23/controllers/save-form}" th:object="${form}" method="POST">
-    <input type='text' id='name' th:field="*{name}" name='name' />
-    <label id='nameError'></label>
 
-    <input type='text' id='lastName' th:field="*{lastName}" name='lastName' />
-    <label id='lastNameError'></label>
+    <div class="input-container">
+      <input type='text' id='name' th:field="*{name}" name='name' placeholder='Enter your name' />
+      <label class="count" id='nameCount'></label>
+    </div>
+    <label id='nameError' th:errors="*{name}"></label>
 
-    <input type='text' id='email' th:field="*{email}" name='email' />
-    <label id='emailError'></label>
+    <div class="input-container">
+      <input type='text' id='lastName' th:field="*{lastName}" name='lastName' placeholder='Enter your last name' />
+      <label class="count" id='lastNameCount'></label>
+    </div>
+    <label id='lastNameError' th:errors="*{lastName}"></label>
 
-    <input type='number' id='semester' th:field="*{semester}" name='semester' />
-    <label id='semesterError'></label>
+    <div class="input-container">
+      <input type='text' id='email' th:field="*{email}" name='email' placeholder='Enter your email' />
+      <label class="count" id='emailCount'></label>
+    </div>
+    <label id='emailError' th:errors="*{email}"></label>
 
-    <input type='text' id='description' th:field="*{description}" name='description' />
-    <label id='descriptionError'>22/100</label>
+    <div class="input-container">
+      <input type='number' id='semester' th:field="*{semester}" name='semester' placeholder='Enter your semester' />
+    </div>
+    <label id='semesterError' th:errors="*{semester}"></label>
+
+    <div class="input-container">
+      <input type='text' id='description' th:field="*{description}" name='description'
+        placeholder='Enter your description' />
+      <label class="count" id='descriptionCount'></label>
+    </div>
+    <label id='descriptionError' th:errors="*{description}"></label>
 
     <input type='submit' value='Submit' />
 

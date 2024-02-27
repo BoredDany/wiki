@@ -89,7 +89,8 @@ public class formSender {
             model.addAttribute("error", "Error al enviar el formulario");
             return "contactUs";
         }
+        model.addAttribute("error", "Form submitted successfully!");
         formService.saveForm(form);
-        return "redirect:/grupo23/controllers/forms-saved";
+        return "redirect:/grupo23/controllers/contactUs";
     }
 }

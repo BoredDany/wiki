@@ -5,11 +5,11 @@ window.onload = function () {
 
     inputs.forEach(function(inputId) {
         var inputElement = document.getElementById(inputId);
-        var errorLabel = document.getElementById(inputId + 'Error');
+        var countLabel = document.getElementById(inputId + 'Count'); // New label for character count
 
         var validationFunction = function() {
             var currentLength = this.value.length;
-            errorLabel.textContent = currentLength + "/" + maxLength;
+            countLabel.textContent = currentLength + "/" + maxLength; // Update the count label
 
             if ((inputId === 'email' && !emailRegex.test(this.value)) || this.value.length > maxLength) {
                 this.style.borderColor = '';

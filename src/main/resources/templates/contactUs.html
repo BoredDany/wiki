@@ -47,6 +47,7 @@
 
     <div class="input-container">
       <input type='number' id='semester' th:field="*{semester}" name='semester' placeholder='Enter your semester' />
+      <label class="count" id='semesterCount'></label>
     </div>
     <label id='semesterError' th:errors="*{semester}"></label>
 
@@ -64,7 +65,7 @@
   </form>
 
 
-  <script src='/grupo23/js/VerifyForm.js'></script>
+  <script src='/grupo23/js/verifier.js'></script>
 </body>
 
 </html>

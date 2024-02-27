@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
     var inputs = ['name', 'lastName', 'email', 'semester', 'description'];
     var maxLength = 100;
     var emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+$/;
@@ -9,8 +9,9 @@ window.onload = function () {
 
         var validationFunction = function() {
             var currentLength = this.value.length;
-            countLabel.textContent = currentLength + "/" + maxLength; // Update the count label
-
+            if(inputId !== 'semester') {
+                countLabel.textContent = currentLength + "/" + maxLength; // Update the count label
+            }
             if ((inputId === 'email' && !emailRegex.test(this.value)) || this.value.length > maxLength) {
                 this.style.borderColor = '';
             } else if (inputId === 'semester' && (this.value < 1 || this.value > 16)) {

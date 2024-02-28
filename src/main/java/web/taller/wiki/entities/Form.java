@@ -21,6 +21,7 @@ import jakarta.validation.constraints.NotBlank;
 @AllArgsConstructor
 
 public class Form {
+    //soft delete
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

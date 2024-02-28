@@ -9,8 +9,9 @@ window.onload = function() {
 
         var validationFunction = function() {
             var currentLength = this.value.length;
-            if(inputId !== 'semester') {
-                countLabel.textContent = currentLength + "/" + maxLength; // Update the count label
+            countLabel.textContent = currentLength + "/" + maxLength; // Update the count label
+            if(inputId === 'semester') {
+                countLabel.style.visibility = 'hidden';
             }
             if ((inputId === 'email' && !emailRegex.test(this.value)) || this.value.length > maxLength) {
                 this.style.borderColor = '';

@@ -88,17 +88,7 @@ overflow: hidden;
 text-overflow: ellipsis;
 }
 
-#pi1 {
+#pi {
     width: 300px;
-    height: auto;
-}
-
-#pi2 {
-    width: 300px;
-    height: auto;
-}
-
-#pi3 {
-    width: 111px;
     height: auto;
 }

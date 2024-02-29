@@ -1,16 +1,18 @@
-window.onload = function () {
+window.onload = function() {
     var inputs = ['name', 'lastName', 'email', 'semester', 'description'];
     var maxLength = 100;
     var emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]+$/;
 
     inputs.forEach(function(inputId) {
         var inputElement = document.getElementById(inputId);
-        var errorLabel = document.getElementById(inputId + 'Error');
+        var countLabel = document.getElementById(inputId + 'Count'); // New label for character count
 
         var validationFunction = function() {
             var currentLength = this.value.length;
-            errorLabel.textContent = currentLength + "/" + maxLength;
-
+            countLabel.textContent = currentLength + "/" + maxLength; // Update the count label
+            if(inputId === 'semester') {
+                countLabel.style.visibility = 'hidden';
+            }
             if ((inputId === 'email' && !emailRegex.test(this.value)) || this.value.length > maxLength) {
                 this.style.borderColor = '';
             } else if (inputId === 'semester' && (this.value < 1 || this.value > 16)) {

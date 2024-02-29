@@ -1,6 +1,7 @@
 body {
     background-color: #EEDEC5;
     margin-top: 100px;
+    font-family: 'Times New Roman', serif; /* Cambio a Times New Roman */
 }
 
 #navbar-container {
@@ -43,25 +44,35 @@ nav a:hover {
     border-radius: 50px;
 }
 
+/* Estilo actualizado para las imágenes y el texto */
+
+.content-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    flex-wrap: nowrap; 
+    margin: 20px;
+}
 
 .image-container {
-    text-align: center;
-    margin: 20px 0;
+    text-align: left;
+    flex: 0 1 auto; 
+    padding-right: 20px; 
 }
 
 .image-container img {
-    width: 150px; /* Ajusta esto según el tamaño deseado */
-    margin: 10px;
+    width: 200px; 
+    margin: 10px 0;
 }
 
 .image-container h3 {
     margin: 5px 0;
+    font-family: 'Times New Roman', serif;
 }
 
 #tools-explanation {
-    text-align: center;
-    margin-top: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    flex: 1 1 auto; 
+    text-align: left;
+    font-family: 'Times New Roman', serif;
 }
+

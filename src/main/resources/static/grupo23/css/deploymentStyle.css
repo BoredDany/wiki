@@ -77,11 +77,10 @@ nav a:hover {
     font-family: 'Times New Roman', serif;
 }
 
-/* Estilo para el contenedor principal */
 .main-container {
-    max-width: 1200px; /* Ajusta según la necesidad */
-    margin: 0 auto; /* Centra el contenedor */
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 20px;
-    position: relative; /* Para la correcta posición con respecto a la navbar fija */
-    top: 60px; /* Ajusta este valor si la altura de tu navbar cambia */
+    position: relative; 
+    top: 60px; 
 }
